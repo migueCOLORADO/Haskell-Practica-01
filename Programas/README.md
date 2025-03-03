@@ -1,13 +1,17 @@
 # Gestión de Estudiantes en Haskell
-El objetivo de esta practica es gestionar la información de los estudiantes que ingresan y salen de una universidad. El programa trabaja con un archivo de texto (University.txt) que almacena la lista de estudiantes y sus registros de entrada y salida. Al iniciar, el programa carga esos datos en memoria y, al terminar, los actualiza nuevamente en el archivo.
 
-Las principales funcionalidades son:
+## Introduccion
+El objetivo de esta practica es crear, a traves del Lenguaje de Programación funcional, Haskell, un programa para gestionar la información de los estudiantes que ingresan y salen de una universidad. 
 
-Registrar la entrada de un estudiante (pidiendo identificación y registrando hora de ingreso).
-Registrar la salida de un estudiante (pidiendo identificación y registrando hora de salida).
-Buscar estudiante por su identificación (para saber si sigue dentro de la universidad).
-Calcular el tiempo de permanencia entre la hora de entrada y la hora de salida.
-Listar todos los estudiantes que se encuentran en la universidad (cargando la información desde el archivo).
+## Descripcion
+El programa utiliza una serie de funciones que trabajan con un archivo de texto (University.txt), mismo que almacena la lista de estudiantes que hayan en la universidad (university), y sus registros de entrada y salida. Al ejecutarse el programa (UniversidadBs.exe), se cargan los datos del archivo en la lista, para luego desplegar un menu de operaciones a disposicion del usuario. Al terminar con la accion a ejecutar elegida por el usuario, finalmente se carga en el archivo la informacion de la lista.
+
+## Funcionalidades
+1. Registrar la entrada de un estudiante (pidiendo identificación y registrando hora de ingreso).
+2. Registrar la salida de un estudiante (pidiendo identificación y registrando hora de salida).
+3. Buscar estudiante por su identificación (para saber si sigue dentro de la universidad).
+4. Calcular el tiempo de permanencia entre la hora de entrada y la hora de salida.
+5. Listar todos los estudiantes que se encuentran en la universidad (cargando la información desde el archivo).
 
 ## Archivo (University.txt)
 [university.txt](https://github.com/user-attachments/files/19045946/university.txt)
