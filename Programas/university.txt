@@ -1,1 +1,1 @@
-Estudiante | {Nombre : "Samuel, Id : 10, Entrada = 2025-03-01 19:36:10.9356852 UTC, salida = 2025-03-01 19:36:49.6277734 UTC}
+Estudiante | {Nombre : "Miguel, Id : 12112, Entrada = 2025-03-03 01:50:11.759739 UTC, salida = Nothing}
