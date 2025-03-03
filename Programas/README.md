@@ -10,6 +10,7 @@ Calcular el tiempo de permanencia entre la hora de entrada y la hora de salida.
 Listar todos los estudiantes que se encuentran en la universidad (cargando la información desde el archivo).
 
 ## Archivo (University.txt)
+[university.txt](https://github.com/user-attachments/files/19045946/university.txt)
 
 ## Video Presentacion del Codigo
 
