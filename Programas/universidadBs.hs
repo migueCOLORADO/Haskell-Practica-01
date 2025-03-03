@@ -31,13 +31,13 @@ buscarEstudiante idEstudiante universidad =
     
 
 -- Función para calcular el tiempo que un estudiante permanecio en la universidad hasta su salida
-tiempoEnLaU :: Estudiante -> IO NominalDiffTime
-tiempoEnLaU estudiante = do
-    case fechaSalida estudiante of
-        Just tiempoSalida -> return $ diffUTCTime tiempoSalida (fechaEntrada estudiante)
+tiempoEnLaU :: Estudiante -> IO NominalDiffTime -- Definicion de la funcion | Que toma como parametro un tipo Estudiante y devuelve un valor de tipo NominalDiffTime (La diferencia entre dos tiempos)
+tiempoEnLaU estudiante = do     -- Declaracion de la funcion
+    case fechaSalida estudiante of -- Estructura de control que evalua si el estudiante ya salio de la universidad
+        Just tiempoSalida -> return $ diffUTCTime tiempoSalida (fechaEntrada estudiante) -- 1er caso | Si el estudiante ya salio de la universidad | Devuelve la diferencia entre la hora de su salida y la hora de su entrada
         Nothing -> do
             tiempoActual <- getCurrentTime      -- Obtenemos la hora actual
-            return $ diffUTCTime tiempoActual (fechaEntrada estudiante)     -- Retorno de la funcion | Devolver la diferencia entre la hora actual y la hora de entrada del estudiante
+            return $ diffUTCTime tiempoActual (fechaEntrada estudiante)     -- 2do caso | Si el estudiante aun esta en la universidad | Devuelve la diferencia entre la hora actual y la hora de su entrada
 
 -- Función para guardar la información de los estudiantes en un archivo de texto
 guardarLaU :: [Estudiante] -> IO ()      -- Definicion de la funcion
@@ -48,7 +48,7 @@ guardarLaU universidad = do         -- Declaracion de la funcion
     putStr "Esta informacion la encontraras en el archivo university.txt."      -- Retorno de la funcion | Mensaje de confirmacion
 
 -- Función para cargar la información de los vehículos desde un archivo de texto
-cargarLaU :: IO [Estudiante]        -- Definicion de la funcion
+cargarLaU :: IO [Estudiante]        -- Definicion de la funcion | 
 cargarLaU = do      -- Declaracion de la funcion
     contenido <- withFile "university.txt" ReadMode $ \h -> do    -- Abrir el archivo university.txt en modo lectura
         contenido <- hGetContents h     -- Leer el contenido del archivo
