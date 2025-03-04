@@ -19,6 +19,9 @@ El programa utiliza una serie de funciones que trabajan con un archivo de texto 
 ## Video Presentacion del Codigo
 
 
+## Link del Repositorio
+[https://github.com/migueCOLORADO/Haskell-Practica-01.git]
+
 
 
 ## Nombre Autores

@@ -47,7 +47,7 @@ guardarLaU universidad = do         -- Declaracion de la funcion
     putStrLn "La informacion de la universidad ha sido guardada exitosamente"   -- Retorno de la funcion | Mensaje de confirmacion
     putStr "Esta informacion la encontraras en el archivo university.txt."      -- Retorno de la funcion | Mensaje de confirmacion
 
--- Función para cargar la información de los vehículos desde un archivo de texto
+-- Función para cargar la información de los estudiantes desde un archivo de texto
 cargarLaU :: IO [Estudiante]        -- Definicion de la funcion | 
 cargarLaU = do      -- Declaracion de la funcion
     contenido <- withFile "university.txt" ReadMode $ \h -> do    -- Abrir el archivo university.txt en modo lectura
