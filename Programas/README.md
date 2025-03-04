@@ -17,7 +17,7 @@ El programa utiliza una serie de funciones que trabajan con un archivo de texto 
 [university.txt](https://github.com/user-attachments/files/19045946/university.txt)
 
 ## Video Presentacion del Codigo
-
+[https://acortar.link/66OKSa]
 
 ## Link del Repositorio
 [https://github.com/migueCOLORADO/Haskell-Practica-01.git]
